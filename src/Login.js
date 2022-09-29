@@ -4,7 +4,7 @@ import { Navigate } from 'react-router-dom';
 import './App.css'
 import Axios from 'axios';
 
-const api_url = "http://localhost:38080/"
+const api_url = "http://52.23.161.194:38080/"
 var datap
 
 async function getapi(api_url) {

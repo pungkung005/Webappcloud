@@ -5,7 +5,7 @@ import './App.css';
 import Axios from 'axios';
 
 
-const api_url = "http://localhost:38080/"
+const api_url = "http://52.23.161.194:38080/"
 
 function Main() {
     let navigate = useNavigate()

@@ -4,7 +4,7 @@ import { Navigate } from 'react-router-dom';
 import './App.css'
 import Axios from 'axios';
 
-const api_url = "http://52.23.161.194:38080/"
+const api_url = "http://54.160.173.1:38080/"
 var datap
 
 async function getapi(api_url) {
@@ -57,11 +57,11 @@ function Login() {
             <h1 className='header'>Login</h1><br></br>
             <h3>Login</h3>
             <input type={"text"} value={usernameLogin} placeholder="enter text" onChange={(e) => setUsernameLogin(e.target.value)} ></input><br></br><br></br>
-            <input type={"text"} value={passwordLogin} placeholder="enter text" onChange={(e) => setPasswordLogin(e.target.value)}></input><br></br><br></br>
+            <input type={"password"} value={passwordLogin} placeholder="enter text" onChange={(e) => setPasswordLogin(e.target.value)}></input><br></br><br></br>
             <button onClick={(login)}>login</button><br></br><br></br>
             <h3>Register</h3>
             <input type={"text"} value={usernameReg} placeholder="enter text" onChange={(e) => setUsernameReg(e.target.value)} ></input><br></br><br></br>
-            <input type={"text"} value={passwordReg} placeholder="enter text" onChange={(e) => setPasswordReg(e.target.value)}></input><br></br><br></br>
+            <input type={"password"} value={passwordReg} placeholder="enter text" onChange={(e) => setPasswordReg(e.target.value)}></input><br></br><br></br>
             <button className='' onClick={(register)}>register</button>
 
         </div>
